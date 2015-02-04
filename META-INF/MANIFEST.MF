@@ -1,10 +1,13 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: RESTAPIGenerator
-Bundle-SymbolicName: RESTAPIGenerator
+Bundle-SymbolicName: RESTAPIGenerator;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: restapigenerator.Activator
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.8.101",
+ org.eclipse.jdt.core;bundle-version="3.9.2",
+ org.eclipse.jdt.launching;bundle-version="3.7.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
