@@ -2,8 +2,9 @@
 1. Clone repository in the directory of your choice
 2. From the Help menu in Eclipse, select Install New Software... to open an Install dialog window.
 3. Add a new repository to add RESTAPIGenerator plug-in:
-> Click on the Add... button to open the New Repository dialog window.
-> Type API Generator Update Site in the site Name text box.> Click on Local and search updateSite directory in the RESTAPIGenerator clone repository and click OK.
+  + Click on the Add... button to open the New Repository dialog window.
+  + Type API Generator Update Site in the site Name text box.
+  + Click on Local and search updateSite directory in the RESTAPIGenerator clone repository and click OK.
 4. Check boxes "REST API Generator" and click on Next buttons.
 5. Click on Finish and when popup Security Warning appeared, click on Ok
 6. Restart Eclipse
