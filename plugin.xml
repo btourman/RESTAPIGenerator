@@ -5,7 +5,7 @@
    <extension
          point="org.eclipse.ui.menus">
       <menuContribution
-            allPopups="true"
+            allPopups="false"
             locationURI="menu:file?after=new">
          <command
                commandId="RESTAPIGenerator.generateApi"
