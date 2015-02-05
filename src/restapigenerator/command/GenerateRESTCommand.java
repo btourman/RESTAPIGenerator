@@ -237,7 +237,7 @@ public class GenerateRESTCommand extends AbstractHandler {
 		builder.append("</listener>");
 		builder.append(DCR);
 
-		builder.append("<<servlet>>");
+		builder.append("<servlet>");
 		builder.append(CR);
 
 		builder.append(TAB);
