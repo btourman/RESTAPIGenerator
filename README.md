@@ -1,5 +1,5 @@
 # How To Install
-1. To start, clone the repository in the directory of your choice
+1. Clone the repository in the directory of your choice
 2. From the Help menu in Eclipse, select Install New Software... to open an Install dialog window.
 3. Add a new repository to add RESTAPIGenerator plug-in:
   > Click on the Add... button to open the New Repository dialog window.
