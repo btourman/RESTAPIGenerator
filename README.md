@@ -1,3 +1,6 @@
+# Prerequisites
+1. Eclipse Kepler
+
 # How To Install
 1. Clone repository in the directory of your choice
 2. From the Help menu in Eclipse, select Install New Software... to open an Install dialog window.
