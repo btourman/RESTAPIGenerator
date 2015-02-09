@@ -55,6 +55,15 @@ public class GenerateRESTCommand extends AbstractHandler {
 	private final String REASTEASY_JAXRS = "resteasy-jaxrs-3.0.10.Final.jar";
 	private final String URL_RESTEASY_JAXRS = "http://central.maven.org/maven2/org/jboss/resteasy/resteasy-jaxrs/3.0.10.Final/" + REASTEASY_JAXRS;
 
+	private final String JACKSON_CORE = "jackson-core-2.5.1.jar";
+	private final String URL_JACKSON_CORE = "http://central.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.5.1/" + JACKSON_CORE;
+
+	private final String JACKSON_DATABIND = "jackson-databind-2.5.1.jar";
+	private final String URL_JACKSON_DATABIND = "http://central.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.1/" + JACKSON_DATABIND;
+
+	private final String JACKSON_ANNOTATIONS = "jackson-annotations-2.5.1.jar";
+	private final String URL_JACKSON_ANNOTATIONS = "http://central.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.5.1/" + JACKSON_ANNOTATIONS;
+
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
 
@@ -438,14 +447,23 @@ public class GenerateRESTCommand extends AbstractHandler {
 		downloadJar(URL_JAVAX_WS, dir, JAVAX_WS);
 		downloadJar(URL_JAXRS, dir, JAXRS);
 		downloadJar(URL_RESTEASY_JAXRS, dir, REASTEASY_JAXRS);
+		downloadJar(URL_JACKSON_CORE, dir, JACKSON_CORE);
+		downloadJar(URL_JACKSON_DATABIND, dir, JACKSON_DATABIND);
+		downloadJar(URL_JACKSON_ANNOTATIONS, dir, JACKSON_ANNOTATIONS);
 
 		IPath resteasy = new Path(dir + "/" + REASTEASY_JAXRS);
 		IPath jaxrs = new Path(dir + "/" + JAXRS);
 		IPath javaxws = new Path(dir + "/" + JAVAX_WS);
+		IPath jacksonCore = new Path(dir + "/" + JACKSON_CORE);
+		IPath jacksonDatabind = new Path(dir + "/" + JACKSON_DATABIND);
+		IPath jacksonAnnotations = new Path(dir + "/" + JACKSON_ANNOTATIONS);
 
 		addClassPath(javaProject, JavaCore.newLibraryEntry(resteasy, null, null));
 		addClassPath(javaProject, JavaCore.newLibraryEntry(jaxrs, null, null));
 		addClassPath(javaProject, JavaCore.newLibraryEntry(javaxws, null, null));
+		addClassPath(javaProject, JavaCore.newLibraryEntry(jacksonCore, null, null));
+		addClassPath(javaProject, JavaCore.newLibraryEntry(jacksonDatabind, null, null));
+		addClassPath(javaProject, JavaCore.newLibraryEntry(jacksonAnnotations, null, null));
 
 	}
 
