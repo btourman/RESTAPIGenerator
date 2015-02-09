@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/RESTAPIGeneratorFeature_1.0.0.201502051822.jar" id="RESTAPIGeneratorFeature" version="1.0.0.201502051822">
+   <feature url="features/RESTAPIGeneratorFeature_1.0.0.201502092057.jar" id="RESTAPIGeneratorFeature" version="1.0.0.201502092057">
       <category name="com.btourman.restgenerator"/>
    </feature>
    <category-def name="com.btourman.restgenerator" label="REST API Generator"/>
