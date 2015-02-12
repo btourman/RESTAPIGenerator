@@ -1,4 +1,4 @@
-# Prerequisites
+# Requirements
 1. Eclipse Kepler
 
 # How To Install
